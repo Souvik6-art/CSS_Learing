@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contentbox{
+    color:rgb(60, 60, 11);
+    background-color: rgba(91, 99, 100, 0.5);
+    height: 130px;
+    border: 5px solid #70c9c9;
+}
+#navbar{
+        height: 50px;
+        color:white;
+        background-color:#003399
+}
+a{margin-left: 50px;
+    color: white;
+    text-decoration:none;
+}
+footer{
+    height: 50px;
+    background-color: #032121;
+    color: #919696;
+   text-align:right;
+}
+input{
+  
+    margin-inline-start: 250px;
+}
+  
