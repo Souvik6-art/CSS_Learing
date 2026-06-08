@@ -1,30 +1,49 @@
+/* Unsplash.com */
 *{
     margin: 0;
     padding: 0;
 }
-.contentbox{
-    color:rgb(60, 60, 11);
-    background-color: rgba(91, 99, 100, 0.5);
-    height: 130px;
-    border: 5px solid #70c9c9;
-}
-#navbar{
+  #logo img{
+height: 40px;
+width: auto;
+
+  }
+  .properties{
+    /* background-color: rgb(3, 15, 69); */
+position: relative;
+top: -15px;
+border-radius: 50px;
+  }
+  #navbar{
+  
         height: 50px;
         color:white;
-        background-color:#003399
+        background-color:#0d2f5e
+        
 }
-a{margin-left: 50px;
+.contentbox{
+    background-image: url(myPhoto/water\ img.avif);
+  background-size: auto;
+      color:rgb(60, 60, 11);
+    background-color: rgba(91, 99, 100, 0.5);
+    height: 130px;
+    border: 3px solid #70c9c9;
+}
+
+a{margin-left: 25px;
     color: white;
     text-decoration:none;
+
+
+}
+input{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-inline-start: 250px;
 }
 footer{
     height: 50px;
-    background-color: #032121;
+    background-color: #1d1d1f;
     color: #919696;
    text-align:right;
 }
-input{
-  
-    margin-inline-start: 250px;
-}
-  
+
