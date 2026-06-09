@@ -1,49 +1,156 @@
-/* Unsplash.com */
-*{
+/*unsplash.com*/
+
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-  #logo img{
-height: 40px;
-width: auto;
 
-  }
-  .properties{
-    /* background-color: rgb(3, 15, 69); */
-position: relative;
-top: -15px;
-border-radius: 50px;
-  }
-  #navbar{
-  
-        height: 50px;
-        color:white;
-        background-color:#0d2f5e
-        
+#logo img {
+    height: 40px;
+    width: auto;
+    display: block;
 }
-.contentbox{
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 50px;
+    color: white;
+    background-color: #0d2f5e;
+    flex-wrap: wrap;
+}
+
+.properties {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.properties a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.properties input {
+    width: 120px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.properties button {
+    padding: 5px 12px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contentbox {
     background-image: url(myPhoto/water\ img.avif);
-  background-size: auto;
-      color:rgb(60, 60, 11);
+    background-size: cover;
+    background-position: center;
+    color: rgb(60, 60, 11);
     background-color: rgba(91, 99, 100, 0.5);
     height: 130px;
     border: 3px solid #70c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
 }
 
-a{margin-left: 25px;
+.contentbox:nth-child(1) {
+    font-size: smaller;
+    background-color: rgba(50, 150, 170, 0.3);
+}
+
+.contentbox:nth-child(2) {
+    font-size: smaller;
+    background-color: rgba(50, 150, 170, 0.6);
+}
+
+.contentbox:nth-child(3) {
+    font-size: smaller;
+    background-color: rgba(50, 150, 170, 0.8);
+}
+
+a {
     color: white;
-    text-decoration:none;
-
-
+    text-decoration: none;
 }
-input{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-inline-start: 250px;
+
+input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-footer{
+
+footer {
     height: 50px;
     background-color: #1d1d1f;
     color: #919696;
-   text-align:right;
+    text-align: center;
+    padding: 10px;
 }
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    #navbar {
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .properties {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .properties a {
+        font-size: 13px;
+    }
+
+    .properties input {
+        width: 80%;
+        margin: 0;
+    }
+
+    .properties button {
+        width: 80%;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    .contentbox {
+        height: 100px;
+        font-size: small;
+    }
+
+    footer {
+        height: auto;
+        text-align: center;
+    }
+}
+
+/* Responsive design for larger screens */
+@media screen and (min-width: 769px) {
+    .properties input {
+        width: 150px;
+        margin-inline-start: 50px;
+    }
+}
+
+
+
+
 
