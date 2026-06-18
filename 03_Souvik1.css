@@ -53,22 +53,23 @@
 }
 
 .contentbox {
-    background-image: url(myPhoto/water\ img.avif);
+    background-image: url(myPhoto/water-wave-with-drops.jpg);
     background-size: cover;
     background-position: center;
     color: rgb(60, 60, 11);
     background-color: rgba(91, 99, 100, 0.5);
-    height: 130px;
+    height: 330px;
     border: 3px solid #70c9c9;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content:flex-start
     padding: 10px;
-    text-align: center;
+    text-align:left;
 }
-
+/*
 .contentbox:nth-child(1) {
     font-size: smaller;
+
     background-color: rgba(50, 150, 170, 0.3);
 }
 
