@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,5 +35,54 @@
     <div class="contentbox" style="  background-color: rgba(50, 150,170, 0.8); font-size: smaller;"> All about the 2.5 litre bottles</div>
 </div>
 <footer > <br>Made By Souvik with &hearts; <br></footer>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyAnnonimous</title>
+    <link rel="stylesheet" href="03_Souvik1.css">
+</head>
+<body>
+<header>
+  <div id="navbar">
+    <a href="#" id="logo"> 
+      <img src="myPhoto/24053.png" alt="mylogo">
+    </a>
+    <div class="properties">
+      <a href="#">Account</a>
+      <a href="#">My Cart</a>
+      
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+        &#9776;
+      </button>
+
+      <input class="properties" style="background-color: rgb(243, 239, 233);" placeholder="neerjhara.com" id="searchInput">
+      <button class="properties" style="background-color: aliceblue;" onclick="searchProducts()">Search</button>
+    </div>
+  </div>
+</header>
+
+<div id="Content">
+    <!-- First box - Products will be loaded here -->
+    <div id="box-500ml" class="contentbox" style="background-color: rgba(50, 150,170, 0.3); font-size:smaller; text-align: start;">
+        <h3>All about the 500ml bottles</h3>
+        <div id="products-container" class="products-grid"></div>
+    </div>
+
+    <div class="contentbox" style="background-color: rgba(50, 150,170, 0.6); font-size: smaller;">
+        All about the 1 litre bottles
+    </div>
+
+    <div class="contentbox" style="background-color: rgba(50, 150,170, 0.8); font-size: smaller;">
+        All about the 2.5 litre bottles
+    </div>
+</div>
+
+<footer><br>Made By Souvik with &hearts;<br></footer>
+
+<script src="script.js"></script>
 </body>
 </html>
